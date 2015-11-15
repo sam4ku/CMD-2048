@@ -25,7 +25,7 @@ public class TwentyFortyEight {
 		}
 		System.out.println();
 		System.out.println("\tUse WASD as arrow keys:\n\n\t\tW\n\tA\t\tD\n\t\tS");
-		System.out.println("\n\thit 'Q' to quit:\n\t");
+		System.out.print("\n\thit 'Q' to quit:\n\n\t");
 		Scanner keyboard = new Scanner(System.in);
 		
 		while(true) {
@@ -64,7 +64,7 @@ public class TwentyFortyEight {
 			}
 			System.out.println();
 			System.out.println("\tUse WASD as arrow keys:\n\n\t\tW\n\tA\t\tD\n\t\tS");
-			System.out.println("\n\thit 'Q' to quit:\n\t");
+			System.out.print("\n\thit 'Q' to quit:\n\n\t");
 		}
 		
 	}
