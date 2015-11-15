@@ -15,17 +15,17 @@ public class TwentyFortyEight {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		System.out.println("\nWelcome to 2048\n\n");
+		System.out.print("\n\tWelcome to 2048\n\n\n\t");
 
 		for (int x = 0; x < nums.length; x++) {
 			for (int y = 0; y < nums.length; y++) {
 				System.out.print(nums[x][y] + "\t");
 			}
-			System.out.println("\n");
+			System.out.print("\n\n\t");
 		}
 		System.out.println();
-		System.out.println("Use WASD as arrow keys:\n\n\tW\nA\t\tD\n\tS");
-		System.out.println("\nhit 'Q' to quit:\n");
+		System.out.println("\tUse WASD as arrow keys:\n\n\t\tW\n\tA\t\tD\n\t\tS");
+		System.out.println("\n\thit 'Q' to quit:\n\t");
 		Scanner keyboard = new Scanner(System.in);
 		
 		while(true) {
@@ -54,17 +54,17 @@ public class TwentyFortyEight {
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-			System.out.println("\nWelcome to 2048\n\n");
+			System.out.print("\n\tWelcome to 2048\n\n\n\t");
 
 			for (int x = 0; x < nums.length; x++) {
 				for (int y = 0; y < nums.length; y++) {
 					System.out.print(nums[x][y] + "\t");
 				}
-				System.out.println("\n");
+				System.out.print("\n\n\t");
 			}
 			System.out.println();
-			System.out.println("Use WASD as arrow keys:\n\n\tW\nA\t\tD\n\tS");
-			System.out.println("\nhit 'Q' to quit:\n");
+			System.out.println("\tUse WASD as arrow keys:\n\n\t\tW\n\tA\t\tD\n\t\tS");
+			System.out.println("\n\thit 'Q' to quit:\n\t");
 		}
 		
 	}
@@ -357,16 +357,17 @@ public class TwentyFortyEight {
 			for (int i = 0; i < lines; i ++) {
 				System.out.println();
 			}
-			System.out.println("Welcome to 2048\n\n");
+			System.out.println("\tWelcome to 2048\n\n");
 			if (lines < 15)
-				System.out.println("Developed by Scott Mallory");
-			wait(500);
+				System.out.println("\tDeveloped by Scott Mallory");
+			wait(300);
 			lines--;
 		}
-		System.out.println("\n\nHit enter to begin:");
+		System.out.println("\n\n\tHit enter to begin:");
 		Scanner keyboard = new Scanner(System.in);
 		keyboard.nextLine();
 	}
+
 	public static void gameOver(String[][] nums) {
 		int lines = 10;
 		while (lines > 0) {
@@ -375,20 +376,20 @@ public class TwentyFortyEight {
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-			System.out.println("Welcome to 2048\n\n");
+			System.out.print("\n\tWelcome to 2048\n\n\n\t");
 
 			for (int x = 0; x < nums.length; x++) {
 				for (int y = 0; y < nums.length; y++) {
 					System.out.print(nums[x][y] + "\t");
 				}
-				System.out.println("\n");
+				System.out.print("\n\n\t");
 			}
 			for (int i = 0; i < lines; i ++) {
 				System.out.println();
 			}
 
-			System.out.println("Game Over");
-			wait(500);
+			System.out.println("\tGame Over");
+			wait(300);
 			lines--;
 		}
 	}
